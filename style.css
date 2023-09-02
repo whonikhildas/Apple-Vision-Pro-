@@ -1,0 +1,1034 @@
+@font-face {
+    font-family: a;
+    src: url(sf-pro-display_regular.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: a;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+#page>nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+    height: 7vh;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: transparent;
+    top: 0%;
+    left: 50%;
+    /* transform: translateX(0%); */
+    color: #fff;
+}
+#page>nav>button{
+    padding: 7px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+#page>nav>h3{
+    font-weight: 100;
+    cursor: pointer;
+}
+#page>video{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: brightness(75%);
+
+}
+#page-bottom{
+    position: absolute;
+    bottom: 5%;
+    height: 20%;
+    width: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page-bottom>h3{
+    color: #dadada93;
+    margin-bottom: 1vw;
+}
+
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+#page1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#page1>h1{
+    font-size: 4vw;
+    position: absolute;
+    color: #fff;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    white-space: nowrap;
+    
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+#page2>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page2>h1{
+    font-size: 4vw;
+    position: absolute;
+    color: #fff;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page3>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page3>h1{
+    font-size: 4vw;
+    position: absolute;
+    color: #fff;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+#page4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+#page4>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page4>h1{
+    font-size: 4vw;
+    position: absolute;
+    color: #fff;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+}
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    margin-bottom: 150px;
+}
+
+#page5>img{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#page5-upper{
+    height:25%;
+    width: 35%;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top:  5%;
+    transform: translateX(-50%);
+
+}
+#page5-upper>img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:  10%;
+    width: 60%;
+
+}
+#page5-upper-inner{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0%;
+    height: 60%;
+    width: 100%;
+    padding: 0px 80px;
+    color: #ff823d;
+}
+#page5-upper-inner>h3{
+    font-weight: 500;
+    cursor: pointer;
+}
+#page5-upper-inner>h3:hover{
+    text-decoration: underline;
+}
+#page5>button{
+    position: absolute;
+    bottom: 7%;
+    left: 55%;
+    transform: translateX(-55%);
+    padding: 10px 30px;
+    border: 1px solid #000;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 50px;
+    scale: 1.5;
+    font-size: 1vw;
+}
+#page6{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page6>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#center-page6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+#center-page6>h3{
+    font-size: 2vw;
+    padding-bottom: 15px;
+}
+
+
+#page7{
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+}
+.left7{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+.left7>h1{
+    font-size: 2vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+}
+.right7{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 4vw;
+    height: 100%;
+    width: 50%;
+    top: 10%;
+}
+.right7>h3{
+    font-size: 1.8vw;
+    width: 90%;
+    color: #484848d7;
+    
+}
+.right7>button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF5A00;
+    color: #fff;
+    font-weight: 400;  
+    border-radius: 50px; 
+    font-size: 1vw;
+    margin-top: 1.5vw;
+
+}
+
+#page8{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page8>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#center-page8{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+#center-page8>h3{
+    font-size: 2vw;
+    padding-bottom: 15px;
+}
+#page9{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page9>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#center-page9{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+#center-page9>h3{
+    font-size: 2vw;
+    padding-bottom: 15px;
+}
+#page10{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page10>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#center-page10{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+#center-page10>h3{
+    font-size: 2vw;
+    padding-bottom: 15px;
+}
+#page11{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+#page11>h3{
+    margin-bottom: 1vw;
+    font-size: 2vw;
+}
+#page11>h1{
+    margin-bottom: 1.5vw;
+    font-size: 4vw;
+}
+#page11>p{
+    font-size: 1.2vw;
+    width: 60%;
+    font-weight: 700;
+    color: #545454c9;
+}
+
+#page12{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+#page12>canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 99;
+}
+#page13{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+#page13>h1{
+    width: 20%;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #4d4d4d;
+    z-index: 99;
+    position: absolute;
+}
+#page13>h1>span{
+    color: #000;
+}
+#page14{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+#page14>h1{
+    width: 20%;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #4d4d4d;
+    z-index: 99;
+    position: absolute;
+}
+#page14>h1>span{
+    color: #000;
+}
+#page15{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+#page15>h1{
+    width: 20%;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #4d4d4d;
+    z-index: 99;
+    position: absolute;
+}
+#page15>h1>span{
+    color: #000;
+}
+#page16{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+#page16>h1{
+    width: 20%;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #4d4d4d;
+    z-index: 99;
+    position: absolute;
+}
+#page16>h1>span{
+    color: #000;
+}
+#page17{
+    position: relative;
+    height: 100vh;
+    background-color: #f5f5f7;
+    width: 100vw;
+}
+#page17>h1{
+    width: 20%;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #4d4d4d;
+    z-index: 99;
+    position: absolute;
+}
+#page17>h1>span{
+    color: #000;
+}
+#page18{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+#page18>h1{
+    width: 20%;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #4d4d4d;
+    z-index: 99;
+    position: absolute;
+}
+#page18>h1>span{
+    color: #000;
+}
+#page19{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+.left19{
+    height: 90%;
+    width: 42.5%;
+    position: relative;
+    background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_top__k3b8lzqd1l2m_large.jpg);
+    background-size: cover;
+}
+.right19{
+    height: 90%;
+    width: 42.5%;
+    position: relative;
+    background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/design/glass_side__gm4agomrwl2e_large.jpg);
+    background-size: cover;
+}
+#page20{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#center-page20{
+    height: 90%;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+#center-page20>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page21{
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: crimson; */
+}
+#page21>h2{
+    position: absolute;
+    width: 50%;
+    color: #434343c7;
+    font-weight: 500;
+    top: 5%;
+}
+#page21>h2>span{
+    color: #000;
+}
+#page21>img{
+    width: 50%;
+    position: absolute;
+    bottom: 0%;
+}
+#page21>button{
+    position: absolute;
+    bottom: 10%;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    border-radius: 50px;
+    background-color: #FF5A00;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+}
+#page22{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page22>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#center-page22{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+#center-page22>h3{
+    font-size: 2vw;
+    padding-bottom: 15px;
+}
+#page23{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+.left23{
+    height: 90%;
+    width: 42.5%;
+    position: relative;
+    background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/scaling_ui__gosi0305um2y_large.jpg);
+    background-size: cover;
+}
+.right23{
+    height: 90%;
+    width: 42.5%;
+    position: relative;
+    background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/spatial_interaction__br11mf88bzxy_large.jpg);
+    background-size: cover;
+}
+
+#page24{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+.dots-container {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.dots-container .dot.active {
+  border: 2px solid ;
+  background-color: #fff;
+
+}
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  position: relative;
+}
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
+}
+
+#page25{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    width: 95%;
+    background:url(https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/around_you__bfdlxkwczahe_large.jpg) no-repeat ;
+}
+#page26{
+    background-color: #000;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0%;
+}
+#page26>canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vw;
+}
+#page27{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+}
+#page27>h4{
+    font-size: 2vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+}
+#page27>h1{
+    font-size: 5vw;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 3vw;
+}
+#page27>p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+    color: #ffffff7c;
+    width: 50%;
+    text-align: center;
+}
+#page27>p>span{
+    color: #fff;
+}
+#page28{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    background-color: #000;
+    font-size: 1.8vw;
+    text-align: center;
+}
+#page28>h5{
+    width: 43%;
+    margin-top: 20px;
+    color: #ffffff7c;
+    line-height: 1.8vw;
+
+}
+#page28>h5>span{
+    color: #fff;
+}
+
+#page28>h1{
+    width: 30%;
+    font-size: 1.8vw;
+    top: 0%;
+}
+#page29{
+    position: relative;
+    height: 130vh;
+    width: 100vw;
+    background-color: #000;  
+}
+#page29>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#center-page29{
+    position: absolute;
+    height: 10%;
+    width: 25%;
+    right: 20%;
+    bottom: 20%;
+    color: #fff;
+    font-weight: 700;
+    z-index: 999;
+}
+#center-page29>h1{
+    margin-bottom: 1.7vw;
+}
+#center-page29>p{
+    color: #ffffff7c;
+    font-size: 1.3vw;
+}
+#center-page29>p>span{
+    color: #fff;
+}
+#page30{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    
+}
+#page30>#troff{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 60%;
+    z-index: 9;
+}
+#page30>#tron{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 60%;
+}
+
+#page31{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    background-color: #000;
+    font-size: 1.8vw;
+    text-align: center;
+    font-weight: 500;
+}
+#page31>h5{
+    width: 43%;
+    margin-top: 20px;
+    color: #ffffff7c;
+    line-height: 1.8vw;
+
+}
+#page31>h5>span{
+    color: #fff;
+}
+
+#page31>h1{
+    width: 30%;
+    font-size: 1.8vw;
+    top: 0%;
+}
+#page32{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    
+}
+#page32>#snroff{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 60%;
+    z-index: 9;
+}
+#page32>#snron{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 60%;
+}
+
+
+#page33{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    background-color: #000;
+    font-size: 1.8vw;
+    text-align: center;
+    font-weight: 500;
+}
+#page33>h5{
+    width: 43%;
+    margin-top: 20px;
+    margin-bottom: 180px;
+    color: #ffffff7c;
+    line-height: 1.8vw;
+
+}
+#page33>h5>span{
+    color: #fff;
+}
+
+#page33>h1{
+    width: 30%;
+    font-size: 1.8vw;
+    top: 0%;
+}
+#page34{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page34>img{    
+    height: 100%;
+    width: 95%;
+    object-fit: cover;
+    opacity: 0.2;
+    scale: 0.5;
+}
+#page35{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    background-color: #000;
+    font-size: 1.8vw;
+    text-align: center;
+    font-weight: 500;
+}
+#page35>h5{
+    width: 43%;
+    margin-top: 20px;
+    color: #ffffff7c;
+    line-height: 1.8vw;
+
+}
+#page35>h5>span{
+    color: #fff;
+}
+
+#page35>h1{
+    width: 30%;
+    font-size: 1.8vw;
+    top: 0%;
+}
+#page35>button{
+    padding: 15px 60px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;  
+    border-radius: 50px; 
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    cursor: pointer;
+}
+#page35>button:hover{
+    background-color: #ffffffdc;
+}
+#lower{
+    background-color: #000;
+}
